@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cdV-SE-GWd" customClass="CustomAlert" customModule="CustomAlert" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wD-KB-ChK">
+                    <rect key="frame" x="30" y="243.5" width="315" height="180"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey! This is akash patel. This is my custom alert!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYN-hZ-rbL">
+                            <rect key="frame" x="20" y="16" width="275" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b1-AX-lam">
+                            <rect key="frame" x="0.0" y="145" width="157.5" height="35"/>
+                            <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="eA2-3w-L8R"/>
+                            </constraints>
+                            <state key="normal" title="Ok"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuK-Uh-66V">
+                            <rect key="frame" x="157.5" y="145" width="157.5" height="35"/>
+                            <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Ok"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3b1-AX-lam" firstAttribute="width" secondItem="cuK-Uh-66V" secondAttribute="width" id="0CD-Zb-zZW"/>
+                        <constraint firstItem="EYN-hZ-rbL" firstAttribute="leading" secondItem="8wD-KB-ChK" secondAttribute="leading" constant="20" id="0t5-dv-Dga"/>
+                        <constraint firstAttribute="height" constant="180" id="1ag-v3-mT4"/>
+                        <constraint firstItem="EYN-hZ-rbL" firstAttribute="top" secondItem="8wD-KB-ChK" secondAttribute="top" constant="16" id="21m-ul-vBZ"/>
+                        <constraint firstAttribute="trailing" secondItem="cuK-Uh-66V" secondAttribute="trailing" id="3Bp-Li-O3T"/>
+                        <constraint firstAttribute="trailing" secondItem="EYN-hZ-rbL" secondAttribute="trailing" constant="20" id="5YC-2L-vsG"/>
+                        <constraint firstItem="3b1-AX-lam" firstAttribute="height" secondItem="cuK-Uh-66V" secondAttribute="height" id="Lea-hc-1ec"/>
+                        <constraint firstItem="cuK-Uh-66V" firstAttribute="leading" secondItem="3b1-AX-lam" secondAttribute="trailing" id="QBH-td-RGB"/>
+                        <constraint firstItem="3b1-AX-lam" firstAttribute="leading" secondItem="8wD-KB-ChK" secondAttribute="leading" id="Ub9-Xx-9Xj"/>
+                        <constraint firstAttribute="bottom" secondItem="3b1-AX-lam" secondAttribute="bottom" id="bZB-Wn-JuR"/>
+                        <constraint firstAttribute="bottom" secondItem="cuK-Uh-66V" secondAttribute="bottom" id="fWi-Bn-MDh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8wD-KB-ChK" firstAttribute="leading" secondItem="mTw-E5-qxP" secondAttribute="leading" constant="30" id="MWR-6Z-L2K"/>
+                <constraint firstItem="8wD-KB-ChK" firstAttribute="centerY" secondItem="cdV-SE-GWd" secondAttribute="centerY" id="k8d-JJ-31x"/>
+                <constraint firstItem="mTw-E5-qxP" firstAttribute="trailing" secondItem="8wD-KB-ChK" secondAttribute="trailing" constant="30" id="l8f-8K-QBO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="mTw-E5-qxP"/>
+            <connections>
+                <outlet property="alertContainer" destination="8wD-KB-ChK" id="2PB-kt-Ccl"/>
+                <outlet property="btnOk" destination="3b1-AX-lam" id="88t-Pg-7ET"/>
+                <outlet property="btnOk2" destination="cuK-Uh-66V" id="deh-1f-xab"/>
+                <outlet property="lblAlertMsg" destination="EYN-hZ-rbL" id="hfS-0e-AMX"/>
+            </connections>
+            <point key="canvasLocation" x="6.5" y="-18.5"/>
+        </view>
+    </objects>
+</document>
